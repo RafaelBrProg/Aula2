@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+<script>
+    const porDia = Number(prompt("Cigarros fumados por dia: "))
+    const anos = Number(prompt("Anos que ele fuma: "))
+ 
+  const minutos_por_cigarro = 10;
+  const minutos_por_dia = 24 * 60
+
+  const cigarroPorAno = porDia * 365;
+  const cigarrosTotais = cigarroPorAno * anos
+  const minutosPerdidos = cigarrosTotais * minutos_por_cigarro
+  const diasPerdidos = minutosPerdidos / minutos_por_dia
+  
+  alert(`O tempo perdido da vida: ${diasPerdidos.toFixed(0)} Dias`)
+</script>
